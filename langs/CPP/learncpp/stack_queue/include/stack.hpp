@@ -17,6 +17,9 @@ class Stack : public Container<T> {
         const T& front() const override{
             return data.back();
         }
+        void pop() override{
+            data.pop_back();
+        }
  };
 
 #endif

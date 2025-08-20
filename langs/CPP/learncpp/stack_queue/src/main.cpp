@@ -12,6 +12,9 @@ int main(){
 
     int val = stack_int.front();
     std::cout << val;
+    stack_int.pop();
+    val = stack_int.front();
+    std::cout << val;
     
     return 0;
 }
