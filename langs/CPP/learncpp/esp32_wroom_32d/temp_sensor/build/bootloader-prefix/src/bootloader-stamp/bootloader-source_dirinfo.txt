@@ -1,0 +1,9 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=source_dir
+command=
+source_dir=/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/langs/CPP/learncpp/esp32_wroom_32d/esp-idf/components/bootloader/subproject
+work_dir=
+
