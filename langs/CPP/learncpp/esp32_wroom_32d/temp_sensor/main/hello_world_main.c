@@ -53,19 +53,22 @@ void app_main(void)
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "driver/adc.h"
+#include "driver/gpio.h"
 
 void app_main(void) {
-    adc1_config_width(ADC_WIDTH_BIT_12);                 
-    adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11); // GPIO34
+    // Configure GPIO36 as input
+    gpio_config_t io_conf = {
+        .pin_bit_mask = 1ULL << GPIO_NUM_23,
+        .mode = GPIO_MODE_INPUT,
+        .pull_up_en = GPIO_PULLUP_DISABLE,
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+        .intr_type = GPIO_INTR_DISABLE
+    };
+    gpio_config(&io_conf);
 
     while (1) {
-        int raw = adc1_get_raw(ADC1_CHANNEL_6);
-        float voltage = raw * (3.3 / 4095);
-        float temp_c = voltage * 100;  // LM35: 10mV per °C
-
-        printf("Raw: %d\tVoltage: %.2f V\tTemp: %.2f °C\n", raw, voltage, temp_c);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        int level = gpio_get_level(GPIO_NUM_23);
+        printf("Digital level: %d\n", level);
+        vTaskDelay(pdMS_TO_TICKS(500)); // 500 ms delay
     }
 }
-
