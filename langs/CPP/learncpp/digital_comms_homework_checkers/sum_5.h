@@ -4,7 +4,7 @@
 #include <vector>
 
 // Sum of squares over a vector of ints
-int sum_and_square(const std::vector<int>& values) {
+int square_and_sum(const std::vector<int>& values) {
     int result = 0;
     for (int v : values) {
         result += v * v;
