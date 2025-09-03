@@ -2,3 +2,37 @@
 *.un~
 *.o
 *.obj
+# ESP-IDF build system
+/build/
+sdkconfig.old
+sdkconfig.ci
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# Local sdkconfig (keep sdkconfig.defaults if you use it for reproducibility)
+sdkconfig
+
+# VS Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# MacOS / system files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+

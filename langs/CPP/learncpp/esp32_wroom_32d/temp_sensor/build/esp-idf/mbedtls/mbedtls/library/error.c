@@ -1,1 +1,0 @@
-/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/langs/CPP/learncpp/esp32_wroom_32d/esp-idf/components/mbedtls/mbedtls/library/error.c
