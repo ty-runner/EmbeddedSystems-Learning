@@ -5,4 +5,4 @@ I can't recommend learncpp.com enough, it has helped me dial in on OOP in a deep
 
 ## At Home Embedded Projects
 ### Blinky (Starting Project for ESP32 toolchain iteration) - GPIO registers and mechanical debouncing
-![1CCDB56F-CAE9-4792-B7AD-364640590871_1_102_o](https://github.com/user-attachments/assets/1fade405-e639-42da-9f49-66040f80e666)
+![IMG_4336-ezgif com-optimize](https://github.com/user-attachments/assets/3b7b59ea-4718-40aa-8364-64f2734c2744)
