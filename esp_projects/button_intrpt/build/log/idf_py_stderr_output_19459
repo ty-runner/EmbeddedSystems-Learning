@@ -1,0 +1,11 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c: In function 'app_main':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:15:20: error: 'LED_GPIO' undeclared (first use in this function)
+   15 |     gpio_reset_pin(LED_GPIO);
+      |                    ^~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:15:20: note: each undeclared identifier is reported only once for each function it appears in
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:17:20: error: 'BUTTON_GPIO' undeclared (first use in this function)
+   17 |     gpio_reset_pin(BUTTON_GPIO);
+      |                    ^~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/button_intrpt.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

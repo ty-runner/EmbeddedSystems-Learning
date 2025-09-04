@@ -1,0 +1,8 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c: In function 'app_main':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c:24:21: error: 'GPIO_OUT_REG' undeclared (first use in this function)
+   24 |                     GPIO_OUT_REG &= ~(1 << LED_GPIO);
+      |                     ^~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c:24:21: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/blinky.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

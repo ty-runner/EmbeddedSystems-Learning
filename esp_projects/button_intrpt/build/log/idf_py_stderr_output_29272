@@ -1,0 +1,8 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c: In function 'button_isr':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:17:19: error: implicit declaration of function 'esp_timer_get_time' [-Werror=implicit-function-declaration]
+   17 |     int64_t now = esp_timer_get_time(); // current time in microseconds
+      |                   ^~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/button_intrpt.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

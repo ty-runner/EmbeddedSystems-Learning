@@ -1,0 +1,35 @@
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/cu.SLAB_USBtoUART 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400d7ed3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d8298: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d71: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d678a: [0;33mgpio_set_level[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m239[0m
+[0m--- 0x400d5e71: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c[0m[0m:[1;31m15[0m
+[0m--- 0x400e400c: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085dfd: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x400d7ed3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d8298: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d71: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d5e68: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c[0m[0m:[1;31m14[0m
+[0m--- 0x400e400c: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085dfd: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x400d7ed3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d8298: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d71: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d67a1: [0;33mgpio_ll_set_level[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/hal/esp32/include/hal/gpio_ll.h[0m[0m:[1;31m486[0m
+[0m--- (inlined by) [0;33mgpio_set_level[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m239[0m
+[0m--- 0x400d5e71: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c[0m[0m:[1;31m15[0m
+[0m--- 0x400e400c: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085dfd: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x400d7ed3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d8298: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d71: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d683c: [0;33mgpio_ll_get_level[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/hal/esp32/include/hal/gpio_ll.h[0m[0m:[1;31m514[0m
+[0m--- (inlined by) [0;33mgpio_get_level[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m245[0m
+[0m--- 0x400d5e68: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c[0m[0m:[1;31m14[0m
+[0m--- 0x400e400c: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085dfd: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m

@@ -1,0 +1,36 @@
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/Kconfig:78
+    /Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/Kconfig:162
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c: In function 'app_main':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:13:5: error: implicit declaration of function 'gpio_reset_pin' [-Werror=implicit-function-declaration]
+   13 |     gpio_reset_pin(LED_GPIO);
+      |     ^~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:13:20: error: 'LED_GPIO' undeclared (first use in this function)
+   13 |     gpio_reset_pin(LED_GPIO);
+      |                    ^~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:13:20: note: each undeclared identifier is reported only once for each function it appears in
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:14:5: error: implicit declaration of function 'gpio_set_direction' [-Werror=implicit-function-declaration]
+   14 |     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
+      |     ^~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:14:34: error: 'GPIO_MODE_OUTPUT' undeclared (first use in this function)
+   14 |     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
+      |                                  ^~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:15:20: error: 'BUTTON_GPIO' undeclared (first use in this function)
+   15 |     gpio_reset_pin(BUTTON_GPIO);
+      |                    ^~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:16:37: error: 'GPIO_MODE_INPUT' undeclared (first use in this function)
+   16 |     gpio_set_direction(BUTTON_GPIO, GPIO_MODE_INPUT);
+      |                                     ^~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:17:5: error: implicit declaration of function 'gpio_pullup_en' [-Werror=implicit-function-declaration]
+   17 |     gpio_pullup_en(BUTTON_GPIO); // enable internal pull-up
+      |     ^~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:27:13: error: implicit declaration of function 'vTaskDelay' [-Werror=implicit-function-declaration]
+   27 |             vTaskDelay(50 / portTICK_PERIOD_MS);  // debounce delay
+      |             ^~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:27:29: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+   27 |             vTaskDelay(50 / portTICK_PERIOD_MS);  // debounce delay
+      |                             ^~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/button_intrpt.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

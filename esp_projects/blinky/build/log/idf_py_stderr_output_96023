@@ -1,0 +1,9 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c: In function 'app_main':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/blinky/main/blinky.c:13:5: error: implicit declaration of function 'gpio_input_enable'; did you mean 'gpio_intr_enable'? [-Werror=implicit-function-declaration]
+   13 |     gpio_input_enable(BUTTON_GPIO);
+      |     ^~~~~~~~~~~~~~~~~
+      |     gpio_intr_enable
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/blinky.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

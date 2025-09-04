@@ -1,0 +1,24 @@
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/cu.SLAB_USBtoUART 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400d7a0f: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d7dd4: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d91: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6073: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c[0m[0m:[1;31m27[0m
+[0m--- 0x400e3b48: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085fb9: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x400d7a0f: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d7dd4: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d91: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6073: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c[0m[0m:[1;31m27[0m
+[0m--- 0x400e3b48: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085fb9: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x400d7a0f: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m434[0m
+[0m--- 0x400d7dd4: [0;33mtask_wdt_isr[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m507[0m
+[0m--- 0x40082d91: [0;33m_xt_lowint1[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6073: [0;33mapp_main[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c[0m[0m:[1;31m27[0m
+[0m--- 0x400e3b48: [0;33mmain_task[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085fb9: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m

@@ -1,0 +1,27 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c: In function 'app_main':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:14:5: error: implicit declaration of function 'gpio_reset_pin' [-Werror=implicit-function-declaration]
+   14 |     gpio_reset_pin(LED_GPIO);
+      |     ^~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:14:20: error: 'LED_GPIO' undeclared (first use in this function)
+   14 |     gpio_reset_pin(LED_GPIO);
+      |                    ^~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:14:20: note: each undeclared identifier is reported only once for each function it appears in
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:15:5: error: implicit declaration of function 'gpio_set_direction' [-Werror=implicit-function-declaration]
+   15 |     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
+      |     ^~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:15:34: error: 'GPIO_MODE_OUTPUT' undeclared (first use in this function)
+   15 |     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
+      |                                  ^~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:16:20: error: 'BUTTON_GPIO' undeclared (first use in this function)
+   16 |     gpio_reset_pin(BUTTON_GPIO);
+      |                    ^~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:17:37: error: 'GPIO_MODE_INPUT' undeclared (first use in this function)
+   17 |     gpio_set_direction(BUTTON_GPIO, GPIO_MODE_INPUT);
+      |                                     ^~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/button_intrpt/main/button_intrpt.c:18:5: error: implicit declaration of function 'gpio_pullup_en' [-Werror=implicit-function-declaration]
+   18 |     gpio_pullup_en(BUTTON_GPIO); // enable internal pull-up
+      |     ^~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/button_intrpt.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2
