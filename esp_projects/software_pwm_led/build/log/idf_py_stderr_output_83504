@@ -1,0 +1,7 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c: In function 'app_main':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:33:15: warning: unused variable 'pulse_width' [-Wunused-variable]
+   33 |     const int pulse_width = 50;
+      |               ^~~~~~~~~~~
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/Kconfig:78
+    /Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp-idf/Kconfig:162
