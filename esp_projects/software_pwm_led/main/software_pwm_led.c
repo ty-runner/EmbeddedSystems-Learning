@@ -11,7 +11,7 @@
 #define LED_OFF()  (GPIO.out_w1tc = (1 << LED_GPIO))
 #define LED_TOGGLE() GPIO.out ^= (1 << LED_GPIO); 
 
-void pwm_init() {
+void pwm_init() { //using a channel tied to the timer and led gpio to control PWM
     // Configure the timer
     ledc_timer_config_t timer = {
         .speed_mode = LEDC_HIGH_SPEED_MODE,
