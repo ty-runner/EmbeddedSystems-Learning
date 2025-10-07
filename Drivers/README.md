@@ -10,6 +10,7 @@ The first approach to understand the communication was to use a logic analyzer a
 ![IMG_4483](https://github.com/user-attachments/assets/b4a76fb8-facb-4b2a-a7bb-47f6f0b66ab7)
 
 - Logic Pattern of Packet (Room temp)
-![[Pasted image 20251007142149.png]]
+<img width="782" height="174" alt="image" src="https://github.com/user-attachments/assets/a1955d56-fed3-4c80-ba92-2a3c82433eab" />
 - Logic Pattern of Packet (Hot temp)
-![[Pasted image 20251007142235.png]]
+<img width="786" height="143" alt="image" src="https://github.com/user-attachments/assets/bd35a7c6-f137-45ba-a74f-5a7acb335981" />
+
