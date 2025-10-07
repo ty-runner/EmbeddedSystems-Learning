@@ -11,6 +11,7 @@ The first approach to understand the communication was to use a logic analyzer a
 
 - Logic Pattern of Packet (Room temp)
 <img width="782" height="174" alt="image" src="https://github.com/user-attachments/assets/a1955d56-fed3-4c80-ba92-2a3c82433eab" />
+
 - Logic Pattern of Packet (Hot temp)
 <img width="786" height="143" alt="image" src="https://github.com/user-attachments/assets/bd35a7c6-f137-45ba-a74f-5a7acb335981" />
 
