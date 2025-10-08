@@ -3,6 +3,17 @@ This is a stash of the hardware drivers I have worked on to further my firmware 
 # DHT11 Temperature Sensor, half duplex driver
 
 Using the [DHT11 Sensor Datasheet](https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOopYyIpQbWHyQOEwbU6UUyl6GhCKcvGwhau5AbW7I2dsqLuaHiVZ), I read through the documentation to understand the half duplex communication scheme of the device.
+- Simple Wiring Application:
+<img width="587" height="381" alt="image" src="https://github.com/user-attachments/assets/6fc59e84-8604-4806-be76-5b31f8fa553d" />
+
+- Communication Process:
+Single-bus data format is used for communication and synchronization between MCU and DHT11 sensor. One communication process is about 4ms.
+Data consists of decimal and integral parts. A complete data transmission is 40bit, and the sensor sends higher data bit first.
+Data format: 8bit integral RH data + 8bit decimal RH data + 8bit integral T data + 8bit decimal T data + 8bit check sum. 
+If the data transmission is right, the check-sum should be the last 8bit of "8bit integral RH data + 8bit decimal RH data + 8bit integral T data + 8bit decimal T data".
+
+- Communication Process Diagram:
+<img width="637" height="383" alt="image" src="https://github.com/user-attachments/assets/0134fddf-27a8-4acc-836e-d4b500377142" />
 
 The first approach to understand the communication was to use a logic analyzer and pattern generator to visualize the response packet of the device.
 
