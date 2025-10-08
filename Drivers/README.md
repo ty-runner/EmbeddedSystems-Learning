@@ -26,3 +26,12 @@ The first approach to understand the communication was to use a logic analyzer a
 - Logic Pattern of Packet (Hot temp)
 <img width="786" height="143" alt="image" src="https://github.com/user-attachments/assets/bd35a7c6-f137-45ba-a74f-5a7acb335981" />
 
+- Analysis of Room Temp Byte Stream
+
+For this data extraction, I used a channel pin to send a pattern generator function which pulsed between high and low voltage. The sensor starts transmission when the MCU pulls the data voltage low, then pull up the voltage for 10 microseconds, and then the sensor starts transmission. The analysis of the 40 bit tranmission are shown below:
+<img width="818" height="165" alt="image" src="https://github.com/user-attachments/assets/3240a6a6-23ec-4cd0-a4e1-9f77c4dbef8f" />
+Byte 0: 00111100 -> 60% humidity
+Byte 1: 00000011 -> .3% humidity -> 60.3% humidity
+Byte 2: 00010111 -> 23 degrees celcius
+Byte 3: 00001001 -> .9 degrees celcius -> 23.9 degrees celcius
+Byte 4: CHECKSUM -> 01011111 = (60 + 3 + 23 + 9) & 0xFF -> 01011111
