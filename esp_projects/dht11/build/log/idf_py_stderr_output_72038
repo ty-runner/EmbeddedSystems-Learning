@@ -1,0 +1,131 @@
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c: In function 'pwm_init':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:14:5: error: unknown type name 'ledc_timer_config_t'
+   14 |     ledc_timer_config_t timer = {
+      |     ^~~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:15:9: error: field name not in record or union initializer
+   15 |         .speed_mode = LEDC_HIGH_SPEED_MODE,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:15:9: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:15:23: error: 'LEDC_HIGH_SPEED_MODE' undeclared (first use in this function)
+   15 |         .speed_mode = LEDC_HIGH_SPEED_MODE,
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:15:23: note: each undeclared identifier is reported only once for each function it appears in
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:16:9: error: field name not in record or union initializer
+   16 |         .duty_resolution = LEDC_TIMER_10_BIT, // 0–1023 steps
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:16:9: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:16:28: error: 'LEDC_TIMER_10_BIT' undeclared (first use in this function)
+   16 |         .duty_resolution = LEDC_TIMER_10_BIT, // 0–1023 steps
+      |                            ^~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:16:28: warning: excess elements in scalar initializer
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:16:28: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:17:9: error: field name not in record or union initializer
+   17 |         .timer_num = LEDC_TIMER_0,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:17:9: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:17:22: error: 'LEDC_TIMER_0' undeclared (first use in this function)
+   17 |         .timer_num = LEDC_TIMER_0,
+      |                      ^~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:17:22: warning: excess elements in scalar initializer
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:17:22: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:18:9: error: field name not in record or union initializer
+   18 |         .freq_hz = 1000, // 1 kHz PWM (period = 1 ms)
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:18:9: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:18:20: warning: excess elements in scalar initializer
+   18 |         .freq_hz = 1000, // 1 kHz PWM (period = 1 ms)
+      |                    ^~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:18:20: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:19:9: error: field name not in record or union initializer
+   19 |         .clk_cfg = LEDC_AUTO_CLK
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:19:9: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:19:20: error: 'LEDC_AUTO_CLK' undeclared (first use in this function)
+   19 |         .clk_cfg = LEDC_AUTO_CLK
+      |                    ^~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:19:20: warning: excess elements in scalar initializer
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:19:20: note: (near initialization for 'timer')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:21:5: error: implicit declaration of function 'ledc_timer_config' [-Werror=implicit-function-declaration]
+   21 |     ledc_timer_config(&timer);
+      |     ^~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:24:5: error: unknown type name 'ledc_channel_config_t'; did you mean 'esp_etm_channel_config_t'?
+   24 |     ledc_channel_config_t channel = {
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     esp_etm_channel_config_t
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:25:9: error: field name not in record or union initializer
+   25 |         .gpio_num   = LED_GPIO,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:25:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:26:9: error: field name not in record or union initializer
+   26 |         .speed_mode = LEDC_HIGH_SPEED_MODE,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:26:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:26:23: warning: excess elements in scalar initializer
+   26 |         .speed_mode = LEDC_HIGH_SPEED_MODE,
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:26:23: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:27:9: error: field name not in record or union initializer
+   27 |         .channel    = LEDC_CHANNEL_0,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:27:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:27:23: error: 'LEDC_CHANNEL_0' undeclared (first use in this function); did you mean 'SOC_LEDC_CHANNEL_NUM'?
+   27 |         .channel    = LEDC_CHANNEL_0,
+      |                       ^~~~~~~~~~~~~~
+      |                       SOC_LEDC_CHANNEL_NUM
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:27:23: warning: excess elements in scalar initializer
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:27:23: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:28:9: error: field name not in record or union initializer
+   28 |         .intr_type  = LEDC_INTR_DISABLE,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:28:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:28:23: error: 'LEDC_INTR_DISABLE' undeclared (first use in this function); did you mean 'ESP_INTR_DISABLE'?
+   28 |         .intr_type  = LEDC_INTR_DISABLE,
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       ESP_INTR_DISABLE
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:28:23: warning: excess elements in scalar initializer
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:28:23: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:29:9: error: field name not in record or union initializer
+   29 |         .timer_sel  = LEDC_TIMER_0,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:29:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:29:23: warning: excess elements in scalar initializer
+   29 |         .timer_sel  = LEDC_TIMER_0,
+      |                       ^~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:29:23: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:30:9: error: field name not in record or union initializer
+   30 |         .duty       = 0,
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:30:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:30:23: warning: excess elements in scalar initializer
+   30 |         .duty       = 0,
+      |                       ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:30:23: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:31:9: error: field name not in record or union initializer
+   31 |         .hpoint     = 0
+      |         ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:31:9: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:31:23: warning: excess elements in scalar initializer
+   31 |         .hpoint     = 0
+      |                       ^
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:31:23: note: (near initialization for 'channel')
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:33:5: error: implicit declaration of function 'ledc_channel_config' [-Werror=implicit-function-declaration]
+   33 |     ledc_channel_config(&channel);
+      |     ^~~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c: In function 'fade_task':
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:41:9: error: implicit declaration of function 'ledc_set_duty' [-Werror=implicit-function-declaration]
+   41 |         ledc_set_duty(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_0, duty);
+      |         ^~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:41:23: error: 'LEDC_HIGH_SPEED_MODE' undeclared (first use in this function)
+   41 |         ledc_set_duty(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_0, duty);
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:41:45: error: 'LEDC_CHANNEL_0' undeclared (first use in this function); did you mean 'SOC_LEDC_CHANNEL_NUM'?
+   41 |         ledc_set_duty(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_0, duty);
+      |                                             ^~~~~~~~~~~~~~
+      |                                             SOC_LEDC_CHANNEL_NUM
+/Users/tyrunner/Documents/GitHub/EmbeddedSoftware/esp_projects/software_pwm_led/main/software_pwm_led.c:42:9: error: implicit declaration of function 'ledc_update_duty' [-Werror=implicit-function-declaration]
+   42 |         ledc_update_duty(LEDC_HIGH_SPEED_MODE, LEDC_CHANNEL_0);
+      |         ^~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/software_pwm_led.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2
