@@ -1,0 +1,4 @@
+Vector semantics
+- initialize size in class
+- pop at index via erase
+- *this pointer use case 
