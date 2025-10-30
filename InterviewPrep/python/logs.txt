@@ -1,0 +1,5 @@
+INFO, Started process
+WARNING, Low memory
+INFO, Finished process
+ERROR, File not found
+INFO, User login
