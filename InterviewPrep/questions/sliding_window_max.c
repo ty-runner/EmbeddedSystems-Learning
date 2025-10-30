@@ -5,7 +5,7 @@ int sliding_window_max(int original[], int orig_size, int window_size, int outpu
     int sum = 0;
 
     for(int i = left; i < window_size; i++)
-        sum+=original[left];
+        sum+=original[i];
     //initial sum of window
     printf("init size: %d\n", sum);
     int sum_copy = sum;
