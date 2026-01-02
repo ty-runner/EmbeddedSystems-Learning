@@ -1,0 +1,5 @@
+Elipsis used in a function header note that a variable number of parameters can be passed in. 
+int funtion(int count, ...) is the syntax, we need count to note how many args we are passing in. The issue is that type checking is suspended in elipsis and the interpretation of inconsistent types is bad.
+
+A few ways to make elipsis safer is to use a delimiter to note the end of the sequence like -1.
+A decoder string passed in first to note what type each parameter passed in is.

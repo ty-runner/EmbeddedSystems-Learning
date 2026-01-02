@@ -1,0 +1,30 @@
+
+Syntax for a lambda:
+[ captureClause ] ( parameters ) -> returnType
+{
+    statements;
+}
+
+Trivial lambda definition:
+#include <iostream>
+
+int main()
+{
+  [] {}; // a lambda with an omitted return type, no captures, and omitted parameters.
+
+  return 0;
+}
+
+A very clean way to use lambdas is storing in a variable:
+// Good: Instead, we can store the lambda in a named variable and pass it to the function.
+auto isEven{
+  [](int i)
+  {
+    return (i % 2) == 0;
+  }
+};
+
+return std::all_of(array.begin(), array.end(), isEven);
+
+
+In actuality, lambdas aren’t functions (which is part of how they avoid the limitation of C++ not supporting nested functions). They’re a special kind of object called a functor. Functors are objects that contain an overloaded operator() that make them callable like a function.
