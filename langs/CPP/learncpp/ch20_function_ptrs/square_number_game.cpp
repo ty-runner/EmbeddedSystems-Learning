@@ -52,8 +52,13 @@ void printSuccess(std::vector<int> nums){
     return;
 }
 
+int findClosestNumber(std::vector<int> nums, int guess){
+    return *std::min_element(nums.begin(), nums.end(), [=](int a, int b){return std::abs(a-guess) < std::abs(b-guess);});
+}
+
 void printFailure(std::vector<int> nums, int guess){
-    std::cout << "whomp whomp you lose\n";
+    int res {findClosestNumber(nums, guess)};
+    std::cout << "whomp whomp you lose, try "<< res << " next time\n";
     return;
 }
 int main(){
